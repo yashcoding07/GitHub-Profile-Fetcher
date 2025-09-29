@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
+    color: #fff;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card {
+    background: rgba(30, 30, 40, 0.95);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 2.5rem 2rem;
+    width: 370px;
+    max-width: 90vw;
+    transition: box-shadow 0.3s;
+    border: 1.5px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-card:hover {
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.55);
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #6e40c9;
+    box-shadow: 0 4px 16px #6e40c980;
+    object-fit: cover;
+    background: #222;
+}
+
+.profile-info {
+    flex: 1;
+    text-align: center;
+}
+
+.username {
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.fullname {
+    font-size: 1.1rem;
+    color: #bdbdbd;
+    margin-bottom: 0.3rem;
+}
+
+.bio {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-top: 0.2rem;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #bdbdbd;
+}
+
+.profile-link {
+    color: #6e40c9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.profile-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+    gap: 0.5rem;
+}
+
+.stat {
+    background: rgba(110, 64, 201, 0.13);
+    border-radius: 12px;
+    padding: 0.8rem 1.1rem;
+    text-align: center;
+    flex: 1;
+    transition: background 0.2s;
+}
+
+.stat:hover {
+    background: rgba(110, 64, 201, 0.23);
+}
+
+.number {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+}
+
+.label {
+    font-size: 0.95rem;
+    color: #bdbdbd;
+    margin-top: 0.2rem;
+}
+
